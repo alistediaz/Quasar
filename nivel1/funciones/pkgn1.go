@@ -12,7 +12,7 @@ func GetLocation(distances ...float32) (x, y float32) {
 
 	//valida que ingresen las tres distancias
 	if cap(distances) == 3 {
-		//Fue necesario calcular una ecuación que permitiera calcular x a partir de las tres distancias
+		//Fue necesario construir una ecuación que permitiera calcular x a partir de las tres distancias
 		//cada satelite genera un círculo que conecta con el punto de la posición de la nave, calculé la intersección de los tres círculos
 		//y construí las ecuaciones:
 		// x = (780000 - 2*powD1 + 3*powD2 - powD3) / -1600
